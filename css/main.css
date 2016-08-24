@@ -1,0 +1,10 @@
+* {
+	box-sizing: border-box;
+}
+
+.main-nav {
+	display: -webkit-flex;
+	-webkit-justify-content: flex-end;
+	list-style: none;
+	text-decoration: none;
+}
