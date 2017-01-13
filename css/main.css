@@ -1,24 +1,17 @@
-* {
-	box-sizing: border-box;
-}
-
-body {
-	
-}
-
 .main-nav {
-	display: -webkit-flex;
-	-webkit-justify-content: flex-end;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 	list-style: none;
 	margin: 0;
-	padding: 0;
+	padding: 20px 20px;
 }
 
 .main-nav a,
 .foot-nav a {
 	display: block;
-	color: gray;
-	padding: 1em;
+	color: #737373;
+	padding: .5em;
 	text-decoration: none;
 	font-size: 16px;
 }
@@ -29,7 +22,7 @@ body {
 }
 
 .google-logo {
-	padding-top: 12em;
+	padding-top: 10em;
 }
 
 .search-box,
@@ -46,19 +39,32 @@ body {
 
 .foot-nav {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
 	list-style-type: none;
 	margin: 0;
-	padding: 0;
+	padding: 0 1.5em .5em 1.5em;
 	position: absolute;
  	right: 0;
   	bottom: 0;
   	left: 0;
 }
 
+.foot-nav a {
+	padding-right: 2em;
+}
+
 .left {
 	margin-right: auto;
+}
+
+.grid-icon {
+	width: 20px;
+	height: 20px;
+}
+
+.bell-icon {
+	width: 30px;
+	height: 30px;
 }
 
 input {
@@ -66,13 +72,14 @@ input {
 	height: 50px;
 	border: 1px solid #dedede;
 	top-padding: 1em;
-}
-
-input {
-    background-image: url(../img/mic.png);
+	 background-image: url(../img/mic.png);
     background-position: 590px 10px;
     background-size: 22px 28px;
     background-repeat: no-repeat;
+}
+
+input:hover {
+   	border-color: #757575;
 }
 
 button {
@@ -98,7 +105,7 @@ button:hover {
 }
 
 img {
-	height: 110px;
+	height: 200px;
 }
 
 p {
